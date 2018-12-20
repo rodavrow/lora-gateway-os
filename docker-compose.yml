@@ -12,9 +12,11 @@ services:
         volume:
           nocopy: true
       - type: bind
-        source: .
+        source: C:\Users\Dave\Projects\lora-gateway-os
         target: /lora-gateway-os
-
+        volume:
+          nocopy: true
+          
   busybox:
     image: busybox
     volumes:
